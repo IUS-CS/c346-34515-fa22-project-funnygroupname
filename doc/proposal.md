@@ -1,4 +1,4 @@
-FunnyGroupName
+# FunnyGroupName
 Website Development Proposal for Fun Dental Services
 Project Vision Statement:
 For Fun Dental Services, a dentistry center that needs to ensure permanent and continuous communication with its customers and stakeholders. Unlike other information-based websites, this website is interactive platform where the dental services center can promote its business, collect customer information, and provide service financing estimates. This will keep the dental services center proactive to gain solid mind share and sustain profitability while gathering constructive inputs for its business strategies.
