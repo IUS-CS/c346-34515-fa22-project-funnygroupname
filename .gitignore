@@ -1,3 +1,9 @@
+
+.env
+/dwfront/dwbackend/.env
+dwfront/dwbackend/.env
+
+
 # What is currently covered by this .gitignore:
 # Using: https://www.toptal.com/developers/gitignore/
 # - Webstorm
