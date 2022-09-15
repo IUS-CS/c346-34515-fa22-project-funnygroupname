@@ -11,10 +11,13 @@ to the company's records.
 _**At the moment, the website can:**_
 * Take Appointment from customers
 
-
+## Prerequisites:
+* #### [Node.js (v18.9.0)](https://nodejs.org/en/download/)
+* #### [Git](https://git-scm.com/downloads)
+* #### Make <sub>(See Additional Notes)</sub>
 
 ## To Build Project:
-* Install git repository on your machine:
+* Install project:
 ```
 git clone https://github.com/IUS-CS/c346-34515-fa22-project-funnygroupname.git       
 ```
@@ -74,3 +77,16 @@ serve -s build
     * dotenv
     * cors
     * bcrypt (unused, currently)
+
+
+----
+##### Additional Notes
+* To install package managers: 
+  * [Windows ](https://chocolatey.org/install)
+  * [Mac](https://brew.sh/)
+* With homebrew, to install Node.js, make and git, use (for chocolatey, use choco) 
+  * ```brew install node```
+  * ```brew install make```
+  * ```brew install git```
+
+
