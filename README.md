@@ -22,11 +22,19 @@ _**At the moment, the website can:**_
 git clone https://github.com/IUS-CS/c346-34515-fa22-project-funnygroupname.git       
 ```
 
-* The backend needs something to connect to. The project is currently set up to pull from a variable from a .env file. Make that.
-```
-cd dwfront/dwbackend
-touch .env
-```
+* Get Dependencies (Windows)
+  * ```cd dwfront ; npm install bootstrap axios yarn ; cd ../```
+  * ```cd dwfront\dwbackend ; npm init ; npm install express nodemon mongoose dotenv cors ; cd ../ ; cd ../```
+  * Everything should be good in the init process except license; change to: MIT
+  * ```cd dwfront\dwbackend ; 'DATABASE_ADMIN_ACCESS=""' | Out-File .env```
+
+* Get Dependencies (Mac/Unix)
+  * ```cd dwfront && npm install bootstrap axios yarn && cd ../```
+  * ```cd dwfront/dwbackend && npm init && npm install express nodemon mongoose dotenv cors ** cd ../ && cd ../```
+  * Everything should be good in the init process except license; change to: MIT
+  * ```cd dwfront/dwbackend && echo 'DATABASE_ADMIN_ACCESS="' > .env```
+
+  
 * In the newly created .env file put. Go to mongoDB account and get credentials:
 ```
 DATABASE_ADMIN_ACCESS="GET MONGODB CREDENTIALS"
