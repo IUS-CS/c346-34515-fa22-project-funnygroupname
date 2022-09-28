@@ -1,24 +1,14 @@
 SHELL='bash'
 
-P = npm
-
-
 TARGETS = Run
-
 all:	$(TARGETS)
 
-Run: Main.o SongManager.o FileManager.o
-	$p
+Run:
+	cd dwfront && npm install bootstrap axios yarn && cd ../
+	cd dwfront/dwbackend && npm install express nodemon mongoose dotenv cors && cd ../ && cd ../
+	cd dwfront/dwbackend && echo DATABASE_ADMIN_ACCESS="" > .env
 
-
-Main.o: Main.cpp
-	$(CC) -c $(CFLAGS) Main.cpp
-FileManager.o: FileManager.cpp
-	$(CC) -c $(CFLAGS) FileManager.cpp
-SongManager.o: SongManager.cpp
-	$(CC) -c $(CURL) $(OPENMP) $(CFLAGS) SongManager.cpp
-
-# This is not done, so PLEASE DO NOT RUN THIS
+# Nothing to clean, for now
 
 clean:
-	rm -rf curl
+
