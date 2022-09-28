@@ -22,26 +22,19 @@ _**At the moment, the website can:**_
 git clone https://github.com/IUS-CS/c346-34515-fa22-project-funnygroupname.git       
 ```
 
-* Get Dependencies (Windows)
-  * ```cd dwfront ; npm install bootstrap axios yarn ; cd ../```
-  * ```cd dwfront\dwbackend ; npm install express nodemon mongoose dotenv cors ; cd ../ ; cd ../```
-  * ```cd dwfront\dwbackend ; 'DATABASE_ADMIN_ACCESS=""' | Out-File .env```
-
-* Get Dependencies (Mac/Unix)
-  * ```cd dwfront && npm install bootstrap axios yarn && cd ../```
-  * ```cd dwfront/dwbackend && npm install express nodemon mongoose dotenv cors ** cd ../ && cd ../```
-  * ```cd dwfront/dwbackend && echo 'DATABASE_ADMIN_ACCESS="' > .env```
+* Get Dependencies with Make <sub>(See Additional Notes If You Don't Have Make)</sub>
+  * ```make```
 
   
 * In the newly created .env file put. Go to mongoDB account and get credentials:
 ```
 DATABASE_ADMIN_ACCESS="GET MONGODB CREDENTIALS"
 ```
+
+#### _if you receive an error about MongooseError and not having a string, deleting the .env file and recreating it yourself in the same spot should fix it_
+
+
 -----
-*
-*
-*
-*
 
 
 ### _Running Back End_
@@ -87,12 +80,26 @@ serve -s build
 
 ----
 ##### Additional Notes
-* To install package managers: 
+* To install package managers:
   * [Windows ](https://chocolatey.org/install)
   * [Mac](https://brew.sh/)
-* With homebrew, to install Node.js, make and git, use (for chocolatey, use choco) 
+* With chocolatey, to install Node.js, make and git, use
+  * ```choco install nodejs.install```
+  * ```choco install make```
+  * ```choco install git```
+* With homebrew, to install Node.js, make and git, use
   * ```brew install node```
   * ```brew install make```
   * ```brew install git```
 
+
+* Get Dependencies Without Make (Windows)
+  * ```cd dwfront ; npm install bootstrap axios yarn ; cd ../```
+  * ```cd dwfront\dwbackend ; npm install express nodemon mongoose dotenv cors ; cd ../ ; cd ../```
+  * ```cd dwfront\dwbackend ; 'DATABASE_ADMIN_ACCESS=""' | Out-File -FilePath .env```
+
+* Get Dependencies Without Make (Mac/Unix)
+  * ```cd dwfront && npm install bootstrap axios yarn && cd ../```
+  * ```cd dwfront/dwbackend && npm install express nodemon mongoose dotenv cors && cd ../ && cd ../```
+  * ```cd dwfront/dwbackend && echo 'DATABASE_ADMIN_ACCESS=""' > .env```
 
