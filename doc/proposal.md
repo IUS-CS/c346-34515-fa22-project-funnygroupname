@@ -7,7 +7,7 @@ dental services center proactive to gain solid mind share and sustain profitabil
 for its business strategies.
 
 #### _Problem Definition:_
-Most dental service centers do not have a professional website yet other than their current social media platforms. 
+Number of dental service centers do not have a professional website yet other than their current social media platforms. 
 These centers are in a need of a well-designed website in which it can continuously communicate with their potential 
 customers and their employees. Instead of having a web service only tailored towards the customer side of a dentist's
 operations, Virtual Dental Services will provide a framework for employees to properly communicate with their workplace.
@@ -18,7 +18,7 @@ a web development team known as FunnyGroupName is dedicated to preparing this pr
 web solution with a number of pages where the dental service centers can inform its customers about their business. It 
 will be capable of collecting information from customers. It will also enable customers to preview service charges and 
 other related financing options.
-Also, most dentists do not want to deal with the backend of maintaining the information regarding their customers.
+Also, those dentists do not want to deal with the backend of maintaining the information regarding their customers.
 Virtual Dental Services will provide easy access to a MongoDB database to store the information
 a dentist needs. This database will allow a dental office to store information about their customers, when appointments
 for said customers are, customers service history and information regarding those services. The database will also provide
