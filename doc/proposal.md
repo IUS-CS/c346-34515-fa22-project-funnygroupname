@@ -35,18 +35,18 @@ engagement and gain progressive feedback. Reflections that are going to be colle
 of deliverable will be incorporated as needed. At the end of the project, we are going to scale our success which 
 mainly be measured in terms of business functionality and satisfaction.
 
-###### _FunnyGroupName will measure its success using the following criteria:
+###### _FunnyGroupName will measure its success using the following criteria:_
 *	The website must meet all quality requirements
 *	The website must be developed within the planned timeframe, between September 15 and November 29, 2022.
 *	The website must include all features needed for a business.
 *	The development process must adhere to professional ethics.
 
-##### _Approach Statement:
+##### _Approach Statement:_
 For success of the project, the team members will follow an Agile approach of planning and 
 project management. Being Agile, our planning is going to happen value-driven, adaptive, and multi-level, together 
 with relative estimation, emergent feature discovery, and continuous testing. Accordingly, each reflection and 
 discoveries will be incorporated throughout the development process.
-#### _Project schedule:
+#### _Project schedule:_
 Our deliverables will follow the following schedule:
 *	Sep 15 – Proposal presentation
 *	Sep 22 – Collection of insights and reflections from team member
@@ -55,7 +55,7 @@ Our deliverables will follow the following schedule:
 *	Oct 29 - Second deliverable (Forms and other pages)
 *	Nov 10 - Third deliverable (Calculator and other features)
 *	Nov 29 - Final submission
-##### _Required tools and instruments:
+##### _Required tools and instruments:_
 During our development, number of tools and instruments are going to be utilized selectively. Since the entire motive 
 of our project is enabling our customer gain competitive advantage in its business, and exceed its expectations, 
 industry tools and instruments which can produce intended features will be prioritized. The following will be among them.
