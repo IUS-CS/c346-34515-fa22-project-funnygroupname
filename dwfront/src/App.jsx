@@ -75,7 +75,7 @@ class App extends Component{
         return (
             <div>
                 <div className='container'>
-                    <h1>Fun Dental Services</h1>
+                    <h1>Dental Service</h1>
                     <h3>Request an appointment: </h3>
 
                     <div className = 'form-div'>
