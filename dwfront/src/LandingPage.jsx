@@ -4,9 +4,11 @@ import Home from "./Home";
 import App from "./App";
 import {Route, Link} from "react-router-dom";
 import {Routes, route} from "react-router-dom";
+import NavigationBar from "./NavigationBar";
 
 const land = (
     <div className='LandingPage'>
+        <NavigationBar></NavigationBar>
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/app" element={<App/>}/>
