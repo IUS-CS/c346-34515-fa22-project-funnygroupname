@@ -59,7 +59,7 @@ class Appointments extends Component{
             date:this.state.date
         }
 
-        axios.post('http://localhost:4000/app/appointment', appt)
+        axios.post('http://localhost:4000/app/appointments', appt)
             .then(response => console.log(response.data))
 
         this.setState({
