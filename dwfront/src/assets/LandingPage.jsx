@@ -1,10 +1,14 @@
 import React from "react";
-import Contacts from "./Contacts";
-import Home from "./Home";
-import Appointments from "./Appointments";
+
 import {Route, Link} from "react-router-dom";
 import {Routes, route} from "react-router-dom";
+
 import NavigationBar from "./NavigationBar";
+
+import Home from "../pages/Home";
+import Appointments from "../pages/Appointments";
+import Contacts from "../pages/Contacts";
+import About from "../pages/About"
 
 const land = (
     <div className='LandingPage'>
@@ -13,6 +17,7 @@ const land = (
             <Route path="/" element={<Home/>}/>
             <Route path="/appointments" element={<Appointments/>}/>
             <Route path="/contacts" element={<Contacts/>}/>
+            <Route path="/about" element={<About/>}/>
         </Routes>
     </div>
 );

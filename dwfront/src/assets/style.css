@@ -1,0 +1,55 @@
+/* Main style for general text */
+.pMain01 {
+    color: royalblue;
+    font-style: oblique;
+    font-weight: normal;
+    font-size: 10px;
+
+}
+
+/* general presentation of the header*/
+.navbar {
+    background-color: mediumaquamarine;
+    position: center;
+    height: 70px;
+    width: auto;
+    display: flex;
+    box-shadow: 0 0 15px 0 mediumturquoise;
+}
+
+/* shows how items in the navigation bar are presented */
+.navbar * {
+    display: inline;
+}
+
+.navbar .item0 {
+    margin:20px;
+}
+
+
+/* spaces the header items */
+.navbar .item1 {
+    margin:20px;
+}
+
+/* colors and changes the header items */
+.navbar li a {
+    font-weight: bolder;
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+.class1 {
+    color: blue;
+    font-size: 100px;
+    padding-left: 140px;
+    font-weight: bold;
+
+}
+.class2 {
+    color: red;
+    background-color: black;
+}
