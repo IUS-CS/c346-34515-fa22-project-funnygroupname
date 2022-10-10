@@ -1,35 +1,28 @@
+# Architecture
+
+<div>
+```
 @startuml
 
 
 frame "Virtual Dental Services" {
-
-database MongoDB as db #Green
-
-
-rectangle "Backend" #Pink{
-
-component express
-component nodemon
-component mongoose
-component dotenv
-component cors
-file ".env" as en
-
-}
-rectangle "FrontEnd" #LightGreen{
-component Webpage #DarkTurquoise {
-
-}
-
-component React #SeaGreen {
-component bootstrap 
-component axios
-collections yarn 
-
-
-}
-
-
+    database MongoDB as db #Green
+    rectangle "Backend" #Pink{
+        component express
+        component nodemon
+        component mongoose
+        component dotenv
+        component cors
+        file ".env" as en
+    }
+    rectangle "FrontEnd" #LightGreen{
+        component Webpage #DarkTurquoise {
+        }
+        component React #SeaGreen {
+            component bootstrap 
+            component axios
+            collections yarn
+        }
 }
 
 dotenv -> mongoose
@@ -44,5 +37,9 @@ cors -> mongoose
 express -> cors
 dude -> Webpage
 
-
 @enduml
+```
+</div>
+
+![](firstDiagram.svg)
+
