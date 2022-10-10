@@ -1,14 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 
 import LandingPage from "./LandingPage";
 
 
+const container = document.getElementById('root');
+const root = createRoot(container);
 
-ReactDOM.render(
+root.render(
     <BrowserRouter>
         <LandingPage />
-    </BrowserRouter>,
-    document.getElementById('root')
-);
+    </BrowserRouter>
+)
+

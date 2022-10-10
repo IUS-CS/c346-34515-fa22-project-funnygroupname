@@ -7,7 +7,7 @@ const bar = (
             <Link to="/">Home</Link>
         </li>
         <li>
-            <Link to="/app">App</Link>
+            <Link to="/appointments">Appointments</Link>
         </li>
         <li>
             <Link to="/contacts">Contacts</Link>
