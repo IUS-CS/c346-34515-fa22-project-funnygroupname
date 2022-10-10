@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const appointmentTemplateCopy  = require('../models/appointmentModels')
 
-router.post('/appointment',(request, response) =>{
+router.post('/appointments',(request, response) =>{
     const appointmentRequest  = new  appointmentTemplateCopy({
         fullName:request.body.fullName,
         email:request.body.email,

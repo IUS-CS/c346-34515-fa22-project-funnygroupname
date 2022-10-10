@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from 'axios'
 
-class App extends Component{
+class Appointments extends Component{
     constructor(){
         super()
         this.state = {
@@ -59,7 +59,7 @@ class App extends Component{
             date:this.state.date
         }
 
-        axios.post('http://localhost:4000/app/appointment', appt)
+        axios.post('http://localhost:4000/app/appointments', appt)
             .then(response => console.log(response.data))
 
         this.setState({
@@ -124,4 +124,4 @@ class App extends Component{
     }
 }
 
-export default App;
+export default Appointments;

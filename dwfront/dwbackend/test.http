@@ -1,10 +1,10 @@
-POST http://localhost:4000/app/appointment
+POST http://localhost:4000/app/appointments
 Content-Type: application/json
 
 {
-  "fullName": "Name Lastname",
-  "email": "email@email.com",
+  "fullName": "Name",
+  "email": "new@email.com",
   "operation": "Unbritish his teeth",
-  "cost": 1200,
-  "date": "10/14/2022"
+  "cost": 100000,
+  "date": "11/14/2022"
 }
