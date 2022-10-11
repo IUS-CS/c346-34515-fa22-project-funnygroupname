@@ -28,6 +28,9 @@ const bar = (
                 <li className="item1">
                     <Link to="/overview">Overview</Link>
                 </li>
+                <li className="item1">
+                    <Link to="/photos">Photos</Link>
+                </li>
             </ul>
         </nav>
     </header>
