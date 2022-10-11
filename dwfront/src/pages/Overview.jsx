@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 const element = (
     <div>
         <p className='class1'>
@@ -20,5 +18,4 @@ const element = (
 function Overview() {
     return element
 }
-
 export default Overview;

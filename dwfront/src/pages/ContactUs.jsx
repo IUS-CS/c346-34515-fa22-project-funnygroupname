@@ -39,5 +39,4 @@ const element = (
 function ContactUs() {
     return element
 }
-
 export default ContactUs;
