@@ -10,6 +10,7 @@ import Appointments from "../pages/Appointments";
 import ContactUs from "../pages/ContactUs";
 import About from "../pages/About"
 import SignIn from "../pages/SignIn";
+import Overview from "../pages/Overview";
 
 const land = (
     <div className='LandingPage'>
@@ -20,6 +21,7 @@ const land = (
             <Route path="/contactus" element={<ContactUs/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/signin" element={<SignIn/>}/>
+            <Route path="/overview" element={<Overview/>}/>
         </Routes>
     </div>
 );
