@@ -17,7 +17,7 @@ const bar = (
                     <Link to="/appointments">Appointments</Link>
                 </li>
                 <li className="item1">
-                    <Link to="/contacts">Contacts</Link>
+                    <Link to="/contactus">Contacts Us</Link>
                 </li>
                 <li className="item1">
                     <Link to="/about">About</Link>
