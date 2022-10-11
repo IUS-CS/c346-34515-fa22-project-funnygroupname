@@ -23,7 +23,7 @@ Members present:
 
   Here are screenshots of what we did:
 
-![Thing](/doc/images/screenshot1.png)
+![](images/screenshot1.png)
 
   ## Retro
 
