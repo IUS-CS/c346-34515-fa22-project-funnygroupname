@@ -34,6 +34,9 @@ const bar = (
                 <li className="item1">
                     <Link to="/employeeschedule">Employee Schedule</Link>
                 </li>
+                <li className="item1">
+                    <Link to="/customers">Customers</Link>
+                </li>
             </ul>
         </nav>
     </header>

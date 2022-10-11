@@ -1,15 +1,16 @@
 import React from "react";
 
-
-
 const element = (
     <div>
-        <h1>
-            Call: +1(502)888 8888
-        </h1>
-        <h1>
-            Direction: 2015 Tigrayans street  Louisville Ky 40244
-        </h1>
+        <p className='class1'>
+            Introduce your business:
+        </p>
+        <p className='class1'>
+            Mention the goal of the business:
+        </p>
+        <p className='class1'>
+            Introduce an example what the business do, such as videos and images:
+        </p>
 
     </div>
 );
@@ -17,5 +18,4 @@ const element = (
 function Overview() {
     return element
 }
-
 export default Overview;
