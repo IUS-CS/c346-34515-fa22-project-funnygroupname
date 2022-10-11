@@ -14,7 +14,7 @@ const bar = (
                     <Link to="/">Home</Link>
                 </li>
                 <li className="item1">
-                    <Link to="/appointments">Appointments</Link>
+                    <Link to="/appointments">Schedule Appointments</Link>
                 </li>
                 <li className="item1">
                     <Link to="/contactus">Contacts Us</Link>
@@ -30,6 +30,9 @@ const bar = (
                 </li>
                 <li className="item1">
                     <Link to="/photos">Photos</Link>
+                </li>
+                <li className="item1">
+                    <Link to="/employeeschedule">Employee Schedule</Link>
                 </li>
             </ul>
         </nav>
