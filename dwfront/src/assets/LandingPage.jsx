@@ -7,7 +7,7 @@ import NavigationBar from "./NavigationBar";
 
 import Home from "../pages/Home";
 import Appointments from "../pages/Appointments";
-import Contacts from "../pages/Contacts";
+import ContactUs from "../pages/ContactUs";
 import About from "../pages/About"
 import SignIn from "../pages/SignIn";
 
@@ -17,7 +17,7 @@ const land = (
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/appointments" element={<Appointments/>}/>
-            <Route path="/contacts" element={<Contacts/>}/>
+            <Route path="/contactus" element={<ContactUs/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/signin" element={<SignIn/>}/>
         </Routes>
