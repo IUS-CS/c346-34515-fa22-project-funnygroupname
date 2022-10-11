@@ -5,7 +5,8 @@ import '../assets/style.css'
 const element = (
     <div>
         <h1>
-            Add a photo
+            Add a photo related to your business.
+
         </h1>
 
     </div>
