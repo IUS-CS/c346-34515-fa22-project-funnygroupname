@@ -11,6 +11,7 @@ import ContactUs from "../pages/ContactUs";
 import About from "../pages/About"
 import SignIn from "../pages/SignIn";
 import Overview from "../pages/Overview";
+import Photos from "../pages/Photos";
 
 const land = (
     <div className='LandingPage'>
@@ -22,6 +23,7 @@ const land = (
             <Route path="/about" element={<About/>}/>
             <Route path="/signin" element={<SignIn/>}/>
             <Route path="/overview" element={<Overview/>}/>
+            <Route path="/photos" element={<Photos/>}/>
         </Routes>
     </div>
 );
