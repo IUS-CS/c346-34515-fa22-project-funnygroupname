@@ -3,14 +3,16 @@ import React from "react";
 const element = (
     <div>
         <h1>
-            Contact United Dental Service Center
+            Enter Your Business Contact Title Name  (United Dental Service Center)
         </h1>
         <body>
-        <p className='class1'>
-            If you are a current patient, send an email directly to our United Dental Service Center: dscenter@gmail.com.
+        <s1>
+            If you are a current patient, send an email directly to our United Dental Service Center: Your email address
+            dscenter@gmail.com.
 
-            If you need help with directions, call the customer service at +1(502) 666 8877.
-        </p>
+            If you need help with directions, call the customer service at: Phone number
+            +1(502) 666 8877.
+        </s1>
         <p className='class2'>
 
         </p>
@@ -19,20 +21,20 @@ const element = (
             Important Phone Numbers
         </h1>
         <body>
-        <pre className='class1'>
-            Main number:+1(502)888 8888
-        </pre>
-        <pre className='class1'>
-            Billing:+1(502)222 4444
-        </pre>
-        <pre className='class1'>
+        <s1>
+           Enter your main number:+1(502)888 8888
+        </s1>
+        <s1>
+            Enter your billing number:+1(502)222 4444
+        </s1>
+        <s1>
 
-            Appointment Scheduling:+1(502)999 0000
-        </pre>
-        <pre className='class1'>
-            New patient registration:  +(502)555 1111
+            Enter your Appointment Scheduling number:+1(502)999 0000
+        </s1>
+        <s1>
+            Enter your New patient registration number:  +(502)555 1111
 
-        </pre>
+        </s1>
         </body>
     </div>
 );
