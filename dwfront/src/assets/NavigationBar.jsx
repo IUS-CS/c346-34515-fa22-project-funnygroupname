@@ -22,6 +22,9 @@ const bar = (
                 <li className="item1">
                     <Link to="/about">About</Link>
                 </li>
+                <li className="item1">
+                    <Link to="/signin">Sign In</Link>
+                </li>
             </ul>
         </nav>
     </header>
