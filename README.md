@@ -65,7 +65,6 @@ serve -s build
 ```
 
 ## Running Tests:
-* Frontend 
 ```
 cd dwfont
 npm test
