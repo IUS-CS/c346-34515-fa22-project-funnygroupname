@@ -53,3 +53,37 @@
     color: red;
     background-color: black;
 }
+
+
+.footer01 {
+    position: fixed;
+    bottom:0;
+    right: 0;
+    left: 0;
+    background-color: darkgrey;
+    height: 70px;
+    width: auto;
+    display: flow;
+    box-shadow: 10px 0 10px 0 slategrey;
+}
+
+
+
+.spacer01 {
+    height: 50px
+}
+
+.spacer02 {
+    height: 25px
+}
+
+.spacer03 {
+    height: 10px
+}
+
+
+.pageLine {
+    height: 2px;
+    background-color: lightslategray;
+    width: auto;
+}

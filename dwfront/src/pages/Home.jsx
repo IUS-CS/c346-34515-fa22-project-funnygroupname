@@ -1,5 +1,8 @@
 import React from "react";
 import '../assets/style.css'
+import {Link} from "react-router-dom";
+import Overview from "../pages/Overview"
+import NavigationBar from "../assets/NavigationBar";
 
 
 const element = (
@@ -14,6 +17,13 @@ const element = (
                 Or something.
             </p>
         </body>
+        <Overview></Overview>
+        <footer className="footer01">
+            <h4>
+                To see your appointment:
+            </h4>
+            <Link to="/reqapp">Click here</Link>
+        </footer>
     </div>
 );
 

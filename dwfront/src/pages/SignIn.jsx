@@ -1,4 +1,5 @@
 import React from "react";
+
 const element = (
     <div>
         <h1>
@@ -11,7 +12,9 @@ const element = (
     </div>
 
 );
+
 function SignIn (){
     return element;
 }
+
 export default SignIn;

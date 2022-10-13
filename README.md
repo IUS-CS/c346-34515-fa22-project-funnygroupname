@@ -63,3 +63,10 @@ npm install -g serve
 npm run build
 serve -s build
 ```
+
+## Running Tests:
+* Frontend 
+```
+cd dwfont
+npm test
+```

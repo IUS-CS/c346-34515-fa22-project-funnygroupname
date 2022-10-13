@@ -8,10 +8,9 @@ const bar = (
         <nav>
             <ul>
                 <li className="item0">
-                    <img src={logo} alt="image failed" width="80" height="60"/>
-                </li>
-                <li className="item1">
-                    <Link to="/">Home</Link>
+                    <Link to="/">
+                        <img src={logo} alt="home" width="80" height="60"/>
+                    </Link>
                 </li>
                 <li className="item1">
                     <Link to="/appointments">Schedule Appointments</Link>

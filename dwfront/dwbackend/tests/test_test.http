@@ -1,0 +1,7 @@
+GET http://localhost:4000/app/test
+Content-Type: application/json
+
+{
+  "name": "Mr Thompson",
+  "num": 1009
+}
