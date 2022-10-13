@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const appointmentTemplateCopy  = require('../models/appointmentModels')
-const testTemplateCopy = require("../models/test")
+const testTemplateCopy = require("../models/testModel")
 
 router.post('/appointments',(request, response) =>{
     const appointmentRequest  = new  appointmentTemplateCopy({
