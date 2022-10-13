@@ -10,7 +10,7 @@ that we use is a Command Pattern. For example, axios package provides to us
 many functions (commands) which we call to communicate with our backend.
 The actual executions taking place is encapsulated within the package. 
 
-### Chain of Responsibility 
+### Chain of Responsibility Pattern
 The use of a front end and back end of our website is a chain of responsibility.
 The front end requests are (oftentimes) transferred to the backend to actually be handled.
 
@@ -32,7 +32,6 @@ type of hierarchy of authority
 will be created to determine such things) 
 as to determine if they are allowed to do certain things.
 
-
 ### Factory Method Pattern
 As of right now, our web pages are all "hand-crafted". This may be fine
 for static web pages, but by providing a web solution, we want to give the
@@ -50,10 +49,15 @@ a type of interface to work with that hooks up to the interface of the JSON mode
 Although, this needs to be expanded upon much more and not be as
 specific as it currently stands.
 
-
-### Interpreter
+### Interpreter Pattern
 A type of interpreter will need to be used to give the "business owner" utilizing
 our web service to create react pages from the website. 
+
+### Singleton Pattern
+When first running the web service, a type of singleton pattern would be helpful as 
+it would require the objects to be created "in house", since the main "set-up" 
+of the web service should remain relativity unchanged while
+the "business owner" builds their website off of it.
 
 
 ---------
