@@ -39,12 +39,12 @@
 
 
 * Get Dependencies Without Make (Windows)
-    * ```cd dwfront ; npm install bootstrap axios yarn ; cd ../```
+    * ```cd dwfront ; npm install bootstrap axios yarn jest ; cd ../```
     * ```cd dwfront\dwbackend ; npm install express nodemon mongoose dotenv cors ; npm i react-router-dom --save ; cd ../ ; cd ../```
     * ```cd dwfront\dwbackend ; 'DATABASE_ADMIN_ACCESS=""' | Out-File -FilePath .env```
 
 * Get Dependencies Without Make (Mac/Unix)
-    * ```cd dwfront && npm install bootstrap axios yarn && npm i react-router-dom --save && cd ../```
+    * ```cd dwfront && npm install bootstrap axios yarn jest && npm i react-router-dom --save && cd ../```
     * ```cd dwfront/dwbackend && npm install express nodemon mongoose dotenv cors && cd ../ && cd ../```
     * ```cd dwfront/dwbackend && echo 'DATABASE_ADMIN_ACCESS=""' > .env```
 
