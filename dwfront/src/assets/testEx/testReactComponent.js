@@ -2,13 +2,7 @@ import React from "react";
 
 
 function hello({}) {
-    const helloDiv = (
-        <div data-tesid = "hello-1">
-            hello dude
-        </div>
-    )
-
-    return helloDiv
+    return <div data-testid = "hello-1">hello dude</div>
 }
 
 export default hello;
