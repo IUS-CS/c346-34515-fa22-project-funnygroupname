@@ -12,7 +12,11 @@ const serviceTemplate = new mongoose.Schema({
         type:String,
         required:true
     },
-    plannedService:{
+    serviceDescription:{
+        type:String,
+        required:true
+    },
+    serviceStatus:{
         type:String,
         required:true
     }

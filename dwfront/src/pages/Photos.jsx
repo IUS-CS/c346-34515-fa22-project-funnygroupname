@@ -6,7 +6,6 @@ const element = (
     <div>
         <h1>
             Add a photo related to your business.
-
         </h1>
 
     </div>

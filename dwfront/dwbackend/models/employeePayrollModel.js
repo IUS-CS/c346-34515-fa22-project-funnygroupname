@@ -1,30 +1,30 @@
 const mongoose = require("mongoose")
-const employeeTemplate = new mongoose.Schema({
+const employeePayrollTemplate = new mongoose.Schema({
     fullName: {
         type:String,
         required:true
     },
-    email:{
+    jobPositionTittle:{
         type:String,
         required:true
     },
-    startDate:{
+    clockInTime:{
         type:String,
         required:true
     },
 
-    homeAddress:{
+    clockOutTime:{
         type:String,
         required:true
 
     },
-    phoneNumber:{
+    idNumber:{
         type:String,
         required:true
 
     },
 
-    numberOfWorkHoursPerDay:{
+    numberOfHoursWorkedPerDay:{
         type:String,
         required:true
 
@@ -36,17 +36,9 @@ const employeeTemplate = new mongoose.Schema({
     salaryAmount: {
         type: Number,
         required:true
-    },
-    offDate:{
-        type:Date,
-        required:true
-    },
-    workDate:{
-        type:Date,
-        required:true
     }
 
 })
 
 
-module.exports = mongoose.model('employees', employeeTemplate)
+module.exports = mongoose.model('employeepayroll', employeePayrollTemplate)
