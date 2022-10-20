@@ -20,7 +20,7 @@ const CustomersTemplate = new mongoose.Schema({
 
     },
 
-    customerAge:{
+    customerDateOfBirth:{
         type:String,
         required:true
     },
@@ -34,7 +34,7 @@ const CustomersTemplate = new mongoose.Schema({
         required:true
 
     },
-    emergencyContact: {
+    emergencyContactName: {
         type: String,
         required:true
     },
