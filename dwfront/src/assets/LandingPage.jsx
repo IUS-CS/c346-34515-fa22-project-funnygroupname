@@ -14,6 +14,8 @@ import Overview from "../pages/Overview";
 import Photos from "../pages/Photos";
 import EmployeeSchedule from "../pages/Employee Schedule";
 import Customers from "../pages/Customers";
+import RequestAppointment from "../pages/RequestAppointment";
+import DatabaseTest from "../pages/DatabaseTest"
 
 const land = (
     <div className='LandingPage'>
@@ -28,6 +30,8 @@ const land = (
             <Route path="/photos" element={<Photos/>}/>
             <Route path="/employeeschedule" element={<EmployeeSchedule/>}/>
             <Route path="/customers" element={<Customers/>}/>
+            <Route path="/reqapp" element={<RequestAppointment/>}/>
+            <Route path="/test" element={<DatabaseTest/>}/>
         </Routes>
     </div>
 );

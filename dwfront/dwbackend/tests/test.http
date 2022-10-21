@@ -1,0 +1,12 @@
+POST http://localhost:4000/app/appointments
+Content-Type: application/json
+
+{
+  "fullName": "DatabaseTest name 01",
+  "email": "EmailTime",
+  "operation": "Denchers",
+  "cost": 90,
+  "date": "12/12/2022"
+}
+
+

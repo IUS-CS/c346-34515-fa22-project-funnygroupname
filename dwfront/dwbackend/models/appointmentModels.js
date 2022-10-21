@@ -1,4 +1,5 @@
 const mongoose = require("mongoose")
+
 const appointmentTemplate = new mongoose.Schema({
     fullName: {
         type:String,
