@@ -5,25 +5,24 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 //import 'bootstrap/dist/css'
 const element = (
     <div >
+
         <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
-                <Card.Title>Login </Card.Title>
+                <Card.Title>Photos</Card.Title>
                 <Card.Text>
-                    You are not signed in. please sign in.
+                    Upload your photo.
                 </Card.Text>
-                <Button variant="primary">Login</Button>
-                <Card.Text>
-                    If you don't have an account, please sign up.
-                </Card.Text>
-                <Button variant="primary">Sign Up</Button>
+                <Button variant="primary">Photos</Button>
+
             </Card.Body>
         </Card>
 
     </div>
 );
 
-function Login() {
+function Photos() {
     return element
 }
 
-export default Login;
+export default Photos;
