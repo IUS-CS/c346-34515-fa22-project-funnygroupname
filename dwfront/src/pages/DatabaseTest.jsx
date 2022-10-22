@@ -83,9 +83,9 @@ class DatabaseTest extends Component {
             num:this.state.num2
         }
 
-        // TODO this produces an error!! NOT GOOD
+
         axios
-            .get("http://localhost:4000/app/test?name=urlman")
+            .get("http://localhost:4000/app/test")
             .then(function (response) {
                 console.log(response)
             })

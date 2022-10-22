@@ -17,6 +17,7 @@ it connects it to a given route (database model). The MongoDB is connected to th
 The data is sent to the MongoDB once it is formatted and once the proper credentials are provided to
 it. The credentials are provided by a .env file which is utilized by the dotenv
 package. This places data into a database.
+This is essentially a multi-tier client-server architecture, as explained in the book.
 
 
 

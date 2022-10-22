@@ -12,7 +12,7 @@ import About from "../pages/About"
 import SignIn from "../pages/SignIn";
 import Overview from "../pages/Overview";
 import Photos from "../pages/Photos";
-import EmployeeSchedule from "../pages/Employee Schedule";
+import EmployeeSchedule from "../pages/EmployeeSchedule";
 import Customers from "../pages/Customers";
 import RequestAppointment from "../pages/RequestAppointment";
 import DatabaseTest from "../pages/DatabaseTest"
