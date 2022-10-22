@@ -7,23 +7,19 @@ const element = (
     <div >
         <Card style={{ width: '18rem' }}>
             <Card.Body>
-                <Card.Title>Login </Card.Title>
+                <Card.Title>Upcoming Appointments</Card.Title>
                 <Card.Text>
-                    You are not signed in. please sign in.
+                    Check your upcoming appointments
                 </Card.Text>
-                <Button variant="primary">Login</Button>
-                <Card.Text>
-                    If you don't have an account, please sign up.
-                </Card.Text>
-                <Button variant="primary">Sign Up</Button>
+                <Button variant="primary">Upcoming Appointments</Button>
             </Card.Body>
         </Card>
 
     </div>
 );
 
-function Login() {
+function Appointments() {
     return element
 }
 
-export default Login;
+export default Appointments;
