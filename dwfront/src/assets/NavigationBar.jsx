@@ -1,39 +1,44 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import './style.css'
 import logo from "./images/logoWeb.png";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const bar = (
-    <header className='navbar'>
-        <nav>
-            <ul>
-                <li className="item0">
-                    <Link to="/">
-                        <img src={logo} alt="home" width="80" height="60"/>
-                    </Link>
-                </li>
-                <li className="item1">
-                    <Link to="/appointments">Schedule Appointments</Link>
-                </li>
-                <li className="item1">
-                    <Link to="/contactus">Contacts Us</Link>
-                </li>
-                <li className="item1">
-                    <Link to="/about">About</Link>
-                </li>
-                <li className="item1">
-                    <Link to="/signin">Sign In</Link>
-                </li>
-                <li className="item1">
-                    <Link to="/overview">Overview</Link>
-                </li>
-                <li className="item1">
-                    <Link to="/photos">Photos</Link>
-                </li>
+    <Navbar collapseOnSelect expand="lg" bg="Info" variant="Info">
+        <Container>
+            <Navbar.Brand href="/">
+                <img src={logo} alt="home" width="80" height="60"/>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="me-auto">
+                    <Nav.Link href="/appointments">Appointments</Nav.Link>
+                    <Nav.Link href="/contactus">Contact Us</Nav.Link>
+                    <NavDropdown title="Others" id="collasible-nav-dropdown">
+                        <NavDropdown.Item href="/about">About</NavDropdown.Item>
+                        <NavDropdown.Item href="/photos">
+                            Photos
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="/overview">
+                            Overview
+                        </NavDropdown.Item>
 
-            </ul>
-        </nav>
-    </header>
+                        <NavDropdown.Divider />
+
+                        <NavDropdown.Item href="/test">
+                            TESTING
+                        </NavDropdown.Item>
+                    </NavDropdown>
+                </Nav>
+                <Nav>
+                    <Nav.Link href="/login">Login</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+        </Container>
+    </Navbar>
 );
 
 function NavigationBar() {

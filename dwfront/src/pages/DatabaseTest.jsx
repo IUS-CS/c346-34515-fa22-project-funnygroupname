@@ -87,11 +87,9 @@ class DatabaseTest extends Component {
         axios
             .get("http://localhost:4000/app/")
             .then(function (response) {
-                console.log(response.data.message)
-                // this.setState({
-                //     strValue:JSON.stringify(response.data)
-                // })
+                console.log(response)
             })
+
 
 
         this.setState({
