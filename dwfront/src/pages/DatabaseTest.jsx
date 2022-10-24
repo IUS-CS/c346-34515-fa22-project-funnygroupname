@@ -18,7 +18,8 @@ class DatabaseTest extends Component {
             numD: 0,
             name2: '',
             num2: 0,
-            numValue:0
+            numValue:0,
+            strValue:''
         }
 
         this.changeName = this.changeName.bind(this)
@@ -29,7 +30,7 @@ class DatabaseTest extends Component {
         this.changeNum2 = this.changeNum2.bind(this)
         this.receiveFromDatabase = this.receiveFromDatabase.bind(this)
 
-        this.resetNumValue = this.resetNumValue.bind(this)
+        this.resetValues = this.resetValues.bind(this)
     }
 
 
@@ -83,28 +84,28 @@ class DatabaseTest extends Component {
             num:this.state.num2
         }
 
-
         axios
-            .get("http://localhost:4000/app/test")
+            .get("http://localhost:4000/app/")
             .then(function (response) {
-                console.log(response)
+                console.log(response.data.message)
+                // this.setState({
+                //     strValue:JSON.stringify(response.data)
+                // })
             })
-
-
 
 
         this.setState({
             name2:'',
             num2:0,
-            numValue:namNum2.num
+            numValue:namNum2.num,
         })
     }
 
-    resetNumValue(event){
+    resetValues(event){
         event.preventDefault()
 
         this.setState({ numValue : 0})
-
+        this.setState({ strValue: ''})
     }
 
 
@@ -166,7 +167,13 @@ class DatabaseTest extends Component {
 
                             <div className="card">
                                 <div className="card-body">
-                                    Here is your data {this.state.numValue}
+                                    Here is your data: {this.state.numValue}
+                                </div>
+                            </div>
+
+                            <div className="card">
+                                <div className="card-body">
+                                    Here is your data: {this.state.strValue}
                                 </div>
                             </div>
 
@@ -176,7 +183,7 @@ class DatabaseTest extends Component {
                     <div className="spacer01"/>
 
                     <div className='form-div'>
-                        <form onSubmit={this.resetNumValue}>
+                        <form onSubmit={this.resetValues}>
                             <input type='submit' className='btn btn-danger btn-block' value='Reset Value'/>
                         </form>
                     </div>
