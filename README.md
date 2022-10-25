@@ -45,27 +45,22 @@ DATABASE_ADMIN_ACCESS="GET MONGODB CREDENTIALS"
 
 ### _Running Back End_
 ```
- cd dwfront/dwbackend
- npm start
+  make Back
 ```
 
-------
+
 ### _Running Front End_
 * To run unoptimized version
 ```
- cd dwfront
- npm run start
+  make Front
 ```
 
 * To create and run production build
 ```
-npm install -g serve
-npm run build
-serve -s build
+  make FrontProduct
 ```
 
-## Running Tests:
+### Running Tests:
 ```
-cd dwfont
-npm test
+  make Test
 ```

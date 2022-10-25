@@ -1,6 +1,38 @@
 # Additional Notes
 
 -----
+# Manual Runs
+
+### _Running Back End_
+```
+ cd dwfront/dwbackend
+ npm start
+```
+
+------
+### _Running Front End_
+* To run unoptimized version
+```
+ cd dwfront
+ npm run start
+```
+
+* To create and run production build
+```
+npm install -g serve
+npm run build
+serve -s build
+```
+
+## Running Tests:
+```
+cd dwfont
+npm test
+```
+
+
+-----
+
 ## Dependencies
 * Webstorm plugin: OpenAPI Specifications
 * React
