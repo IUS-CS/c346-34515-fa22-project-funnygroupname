@@ -13,18 +13,9 @@ const PaymentsTemplate = new mongoose.Schema({
         required:true
     },
     paymentDate:{
-        type:Number,
-        required:true
-    },
-
-    paymentTime:{
-        type: Number,
+        type:Date,
         required:true
     }
-
-
-
-
 })
 
 
