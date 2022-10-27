@@ -2,7 +2,6 @@ import React from "react";
 import '../assets/style.css'
 import {Link} from "react-router-dom";
 import Overview from "../pages/Overview"
-import NavigationBar from "../assets/NavigationBar";
 
 
 const element = (

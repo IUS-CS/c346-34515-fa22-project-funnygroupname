@@ -1,11 +1,10 @@
 import React from "react";
 import LoginComponent from "../assets/LoginComponent";
-import NavigationBar from "../assets/NavigationBar";
+import '../assets/style.css'
+
 const element = (
     <div>
-        <LoginComponent>
-
-        </LoginComponent>
+        <LoginComponent classname='itemsCentered'/>
     </div>
 
 );

@@ -8,6 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const bar = (
+    <div>
     <Navbar collapseOnSelect expand="lg" bg="Info" variant="Info">
         <Container>
             <Navbar.Brand href="/">
@@ -40,6 +41,8 @@ const bar = (
             </Navbar.Collapse>
         </Container>
     </Navbar>
+    <div className="spacer03"/>
+    </div>
 );
 
 function NavigationBar() {

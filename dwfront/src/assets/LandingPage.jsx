@@ -19,19 +19,20 @@ import DatabaseTest from "../pages/DatabaseTest"
 
 const land = (
     <div className='LandingPage'>
-        <NavigationBar></NavigationBar>
+        <NavigationBar/>
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/appointments" element={<Appointments/>}/>
             <Route path="/contactus" element={<ContactUs/>}/>
             <Route path="/about" element={<About/>}/>
-            <Route path="/signin" element={<SignIn/>}/>
+            <Route path="/login" element={<SignIn/>}/>
             <Route path="/overview" element={<Overview/>}/>
             <Route path="/photos" element={<Photos/>}/>
             <Route path="/employeeschedule" element={<EmployeeSchedule/>}/>
             <Route path="/customers" element={<Customers/>}/>
             <Route path="/reqapp" element={<RequestAppointment/>}/>
             <Route path="/test" element={<DatabaseTest/>}/>
+            <></>
         </Routes>
     </div>
 );
