@@ -1,5 +1,5 @@
 /* Main style for general text */
-.pMain01 {
+.default {
     color: royalblue;
     font-style: oblique;
     font-weight: normal;
@@ -40,19 +40,6 @@
     font-size: 20px;
 }
 
-
-
-.class1 {
-    color: blue;
-    font-size: 100px;
-    padding-left: 140px;
-    font-weight: bold;
-
-}
-.class2 {
-    color: red;
-    background-color: black;
-}
 
 
 .footer01 {

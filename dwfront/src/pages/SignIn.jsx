@@ -6,13 +6,6 @@ const element = (
         <LoginComponent>
 
         </LoginComponent>
-        <h1>
-            Enter your username
-        </h1>
-        <h1>
-             Enter your password
-        </h1>
-
     </div>
 
 );
