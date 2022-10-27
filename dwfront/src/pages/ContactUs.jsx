@@ -2,19 +2,19 @@ import React from "react";
 
 const element = (
     <div>
-        <h1>
+        <h1 className='default'>
             Enter Your Business Contact Tittle Name
         </h1>
 
-        <p className='class1'>
+        <p className='default'>
             Enter your email address for your current patient to contact your business.
         </p>
 
-        <p className='class1'>
+        <p className='default'>
             Enter the phone number for the customers who need help with directions:
         </p>
 
-        <p className='class1'>
+        <p className='default'>
             Important Phone Numbers
         </p>
 

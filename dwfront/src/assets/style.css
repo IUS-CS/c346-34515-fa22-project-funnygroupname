@@ -1,13 +1,21 @@
 /* Main style for general text */
-.pMain01 {
-    color: royalblue;
-    font-style: oblique;
+.default {
+    font-family: "Lucida Console", "Verdana", monospace;
+    color: midnightblue;
     font-weight: normal;
-    font-size: 10px;
+    font-size: 15px;
 
 }
 
-/* general presentation of the header*/
+
+
+.itemsCentered {
+    position: center;
+}
+
+
+
+/* general presentation of the navbar*/
 .navbar {
     background-color: mediumaquamarine;
     position: center;
@@ -16,6 +24,7 @@
     display: flex;
     box-shadow: 0 0 15px 0 mediumturquoise;
 }
+
 
 /* shows how items in the navigation bar are presented */
 .navbar * {
@@ -40,19 +49,6 @@
     font-size: 20px;
 }
 
-
-
-.class1 {
-    color: blue;
-    font-size: 100px;
-    padding-left: 140px;
-    font-weight: bold;
-
-}
-.class2 {
-    color: red;
-    background-color: black;
-}
 
 
 .footer01 {

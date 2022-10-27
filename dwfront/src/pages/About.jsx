@@ -6,10 +6,10 @@ const element = (
     <div>
         <h1>YOUR DENTIST NAME</h1>
         <body>
-            <p className='class1'>
+            <p className='default'>
                 I hope these large words help you trust this website more
             </p>
-            <p className='class2'>
+            <p className='default'>
                 This is really just a test for fonts
             </p>
         </body>
