@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import logo from "./images/logoWeb.png";
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
