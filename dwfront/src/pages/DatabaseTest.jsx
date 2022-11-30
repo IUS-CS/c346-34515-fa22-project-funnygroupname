@@ -8,8 +8,8 @@ import axios from 'axios'
 
 class DatabaseTest extends Component {
 
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
             // First two values for submit, seconds are for recieve
             name: '',

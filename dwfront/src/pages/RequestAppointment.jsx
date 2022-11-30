@@ -5,8 +5,8 @@ import axios from 'axios'
 
 
 class RequestAppointment extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
             fullName: ''
         }
