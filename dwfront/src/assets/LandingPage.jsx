@@ -10,8 +10,6 @@ import Appointments from "../pages/Appointments";
 import ContactUs from "../pages/ContactUs";
 import About from "../pages/About"
 import SignIn from "../pages/SignIn";
-import Overview from "../pages/Overview";
-import Photos from "../pages/Photos";
 import EmployeeSchedule from "../pages/EmployeeSchedule";
 import Customers from "../pages/Customers";
 import RequestAppointment from "../pages/RequestAppointment";
@@ -26,8 +24,6 @@ const land = (
             <Route path="/contactus" element={<ContactUs/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/login" element={<SignIn/>}/>
-            <Route path="/overview" element={<Overview/>}/>
-            <Route path="/photos" element={<Photos/>}/>
             <Route path="/employeeschedule" element={<EmployeeSchedule/>}/>
             <Route path="/customers" element={<Customers/>}/>
             <Route path="/reqapp" element={<RequestAppointment/>}/>

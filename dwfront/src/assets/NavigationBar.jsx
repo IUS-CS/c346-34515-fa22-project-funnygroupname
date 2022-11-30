@@ -21,15 +21,7 @@ const bar = (
                     <Nav.Link href="/contactus">Contact Us</Nav.Link>
                     <NavDropdown title="Others" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="/about">About</NavDropdown.Item>
-                        <NavDropdown.Item href="/photos">
-                            Photos
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="/overview">
-                            Overview
-                        </NavDropdown.Item>
-
                         <NavDropdown.Divider />
-
                         <NavDropdown.Item href="/test">
                             TESTING
                         </NavDropdown.Item>

@@ -7,10 +7,13 @@ const element = (
         <h1>YOUR DENTIST NAME</h1>
         <body>
             <p className='default'>
-                I hope these large words help you trust this website more
+                Introduce your business:
             </p>
             <p className='default'>
-                This is really just a test for fonts
+                Mention the goal of the business:
+            </p>
+            <p className='default'>
+                Introduce an example what the business do, such as videos and images:
             </p>
         </body>
     </div>
