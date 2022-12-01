@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import '../assets/style.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import axios from 'axios'
+//import axios from 'axios'
 
 
 class RequestAppointment extends Component {
@@ -23,9 +23,9 @@ class RequestAppointment extends Component {
     onSubmit(event){
         event.preventDefault()
 
-        const appt = {
-            fullName:this.state.fullName
-        }
+        // const appt = {
+        //     fullName:this.state.fullName
+        // }
 
         //axios.post('http://localhost:4000/app/appointments', appt)
         //    .then(response => console.log(response.data))

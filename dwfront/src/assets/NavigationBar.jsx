@@ -7,6 +7,18 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+function loginResult() {
+    let isLoggedIn = localStorage.getItem("loggedIn")
+    if (isLoggedIn !== "true") {
+        return (<Nav.Link href="/login">Login</Nav.Link>)
+    } else {
+        return(<Nav.Link href="/account">Account</Nav.Link>)
+    }
+}
+
+
+
+
 const bar = (
     <div>
     <Navbar collapseOnSelect expand="lg" bg="Info" variant="Info">
@@ -28,7 +40,7 @@ const bar = (
                     </NavDropdown>
                 </Nav>
                 <Nav>
-                    <Nav.Link href="/login">Login</Nav.Link>
+                    {loginResult()}
                 </Nav>
             </Navbar.Collapse>
         </Container>

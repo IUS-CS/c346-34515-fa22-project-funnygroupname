@@ -5,6 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import axios from 'axios'
 
+function setLocalTestVar(strVar) {
+    localStorage.setItem("testKey", strVar)
+}
+
 
 class DatabaseTest extends Component {
 
@@ -19,7 +23,8 @@ class DatabaseTest extends Component {
             name2: '',
             num2: 0,
             numValue:0,
-            strValue:''
+            strValue:'',
+            localNum:0,
         }
 
         this.changeName = this.changeName.bind(this)
@@ -30,6 +35,9 @@ class DatabaseTest extends Component {
         this.changeNum2 = this.changeNum2.bind(this)
         this.receiveFromDatabase = this.receiveFromDatabase.bind(this)
 
+
+        this.changeLocalNum = this.changeLocalNum.bind(this)
+        this.setLocalValue = this.setLocalValue.bind(this)
         this.resetValues = this.resetValues.bind(this)
     }
 
@@ -53,6 +61,11 @@ class DatabaseTest extends Component {
     changeNum2(event){
         this.setState({
             num2:event.target.value
+        })
+    }
+    changeLocalNum(event){
+        this.setState({
+            localNum:event.target.value
         })
     }
 
@@ -109,6 +122,15 @@ class DatabaseTest extends Component {
         this.setState({ strValue: ''})
     }
 
+    setLocalValue(event) {
+        event.preventDefault()
+        setLocalTestVar(this.state.localNum)
+
+    }
+
+
+
+
 
 
 
@@ -164,6 +186,7 @@ class DatabaseTest extends Component {
 
                             <input type='submit' className='btn btn-danger btn-block' value='Get from database'/>
 
+
                             <div className="spacer02"/>
 
                             <div className="card">
@@ -178,16 +201,86 @@ class DatabaseTest extends Component {
                                 </div>
                             </div>
 
+                            <div className="spacer02"/>
+
+                            <div className='form-div'>
+                                <form onSubmit={this.resetValues}>
+                                    <input type='submit' className='btn btn-danger btn-block' value='Reset Value'/>
+                                </form>
+                            </div>
+
+                            <div className="spacer01"/>
+
+                            <div className="card">
+                                <div className="card-body">
+                                    Here is your local data length: {localStorage.length}
+                                </div>
+                            </div>
+                            <div className="card">
+                                <div className="card-body">
+                                    <p>
+                                        Here is your local data key 0: {localStorage.key(0)}
+                                    </p>
+                                    <p>
+                                        Here is the data there: {localStorage.getItem(localStorage.key(1))}
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="card">
+                                <div className="card-body">
+                                    <p>
+                                        Here is your local data key 1: {localStorage.key(1)}
+                                    </p>
+                                    <p>
+                                        Here is the data there: {localStorage.getItem(localStorage.key(0))}
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="card">
+                                <div className="card-body">
+                                    <p>
+                                        Here is your local data key 2: {localStorage.key(2)}
+                                    </p>
+                                    <p>
+                                        Here is the data there: {localStorage.getItem(localStorage.key(2))}
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="card">
+                                <div className="card-body">
+                                    <p>
+                                        Here is the data at "testKey": {localStorage.getItem("testKey")}
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div className="spacer03"/>
+
+
+                            <input type = 'number'
+                                   placeholder='Number'
+                                   onChange={this.changeLocalNum}
+                                   value={this.state.localNum}
+                                   className='form-control form-group'
+                            />
+
+                            <div className="spacer03"/>
+
+                            <div className='form-div'>
+                                <form onSubmit={setLocalTestVar(this.state.localNum)}>
+                                    <input type='submit' className='btn btn-danger btn-block' value='Local Value'/>
+                                </form>
+                            </div>
+
+
                         </form>
                     </div>
 
-                    <div className="spacer01"/>
 
-                    <div className='form-div'>
-                        <form onSubmit={this.resetValues}>
-                            <input type='submit' className='btn btn-danger btn-block' value='Reset Value'/>
-                        </form>
-                    </div>
+
+
+
 
                 </div>
             </div>
