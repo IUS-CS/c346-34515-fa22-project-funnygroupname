@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const appointmentTemplateCopy  = require('../models/appointmentModels')
+const usersTemplateCopy  = require('../models/signInModel')
 const testTemplateCopy = require("../models/testModel")
 
 router.post('/appointments',(request, response) =>{
@@ -12,6 +13,25 @@ router.post('/appointments',(request, response) =>{
         date:request.body.date
     })
     appointmentRequest.save()
+        .then(data =>{
+            response.json(data)
+        })
+        .catch(error => {
+            response.json(error)
+        })
+})
+
+
+router.post('/users',(request, response) =>{
+    const userRequest  = new  usersTemplateCopy({
+        username:request.body.username,
+        password:request.body.password,
+        privilege:request.body.privilege,
+        firstName:request.body.firstName,
+        lastName:request.body.lastName,
+        dateJoined:request.body.dateJoined
+    })
+    userRequest.save()
         .then(data =>{
             response.json(data)
         })

@@ -1,0 +1,11 @@
+POST http://localhost:4000/app/users
+Content-Type: application/json
+
+{
+  "username": "user001",
+  "password": "pass123",
+  "privilege": "customer",
+  "firstName": "j",
+  "lastName": "M",
+  "dateJoined": "11/30/2022"
+}

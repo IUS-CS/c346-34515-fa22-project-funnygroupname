@@ -10,12 +10,12 @@ import Appointments from "../pages/Appointments";
 import ContactUs from "../pages/ContactUs";
 import About from "../pages/About"
 import SignIn from "../pages/SignIn";
-import Overview from "../pages/Overview";
-import Photos from "../pages/Photos";
 import EmployeeSchedule from "../pages/EmployeeSchedule";
 import Customers from "../pages/Customers";
+import Account from "../pages/Account";
 import RequestAppointment from "../pages/RequestAppointment";
 import DatabaseTest from "../pages/DatabaseTest"
+import LocVars from "./LocalVariables"
 
 const land = (
     <div className='LandingPage'>
@@ -26,18 +26,18 @@ const land = (
             <Route path="/contactus" element={<ContactUs/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/login" element={<SignIn/>}/>
-            <Route path="/overview" element={<Overview/>}/>
-            <Route path="/photos" element={<Photos/>}/>
             <Route path="/employeeschedule" element={<EmployeeSchedule/>}/>
             <Route path="/customers" element={<Customers/>}/>
             <Route path="/reqapp" element={<RequestAppointment/>}/>
             <Route path="/test" element={<DatabaseTest/>}/>
+            <Route path="/account" element={<Account/>}/>
             <></>
         </Routes>
     </div>
 );
 
 function LandingPage() {
+    LocVars.setUpLocalVariables()
     return land
 }
 

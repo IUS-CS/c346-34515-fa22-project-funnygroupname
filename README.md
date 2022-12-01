@@ -1,4 +1,4 @@
-# **Virtual Dental Service**
+# **Virtual Dental Services**
 ## A Web Solution For Dental Services
 ### _by FunnyGroupName_
 

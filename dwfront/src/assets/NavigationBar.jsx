@@ -7,6 +7,18 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+function loginResult() {
+    let isLoggedIn = localStorage.getItem("loggedIn")
+    if (isLoggedIn !== "true") {
+        return (<Nav.Link href="/login">Login</Nav.Link>)
+    } else {
+        return(<Nav.Link href="/account">Account</Nav.Link>)
+    }
+}
+
+
+
+
 const bar = (
     <div>
     <Navbar collapseOnSelect expand="lg" bg="Info" variant="Info">
@@ -21,22 +33,14 @@ const bar = (
                     <Nav.Link href="/contactus">Contact Us</Nav.Link>
                     <NavDropdown title="Others" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="/about">About</NavDropdown.Item>
-                        <NavDropdown.Item href="/photos">
-                            Photos
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="/overview">
-                            Overview
-                        </NavDropdown.Item>
-
                         <NavDropdown.Divider />
-
                         <NavDropdown.Item href="/test">
                             TESTING
                         </NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
                 <Nav>
-                    <Nav.Link href="/login">Login</Nav.Link>
+                    {loginResult()}
                 </Nav>
             </Navbar.Collapse>
         </Container>

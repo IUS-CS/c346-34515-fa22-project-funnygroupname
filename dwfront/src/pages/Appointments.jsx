@@ -1,12 +1,11 @@
 import React, {Component} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from 'axios'
-import UpcomingAppointmentsComponent from "../assets/AppointmentsComponent";
 import AppointmentsComponent from "../assets/AppointmentsComponent";
 
 class Appointments extends Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state = {
             fullName:'',
             email:'',
