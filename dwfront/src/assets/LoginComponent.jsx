@@ -3,14 +3,31 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from "axios";
+import Nav from 'react-bootstrap/Nav';
 
+
+
+/**
+ * Function to set local variables to the state of being logged out
+ */
+function logOut() {
+    localStorage.setItem("username","nil")
+    localStorage.setItem("loggedIn","false")
+    localStorage.setItem("privilege","nil")
+}
+
+
+/**
+ * Temporary variables for logging in
+ */
 let usernameTemp = "";
 let passwordTemp = "";
+let stringWord = "";
 
-
+/**
+ * Logs a user into their account given their account username and password
+ */
 function onSubmit(){
-
-
     const requ = {
         username:"user",
         password:"2124",
@@ -23,6 +40,31 @@ function onSubmit(){
     passwordTemp = ""
 }
 
+function receiveFromDatabase(){
+
+    console.log("HEY DUDE")
+
+
+    axios
+        .get("http://localhost:4000/app/users")
+        .then(function (response) {
+            console.log(response.data.message)
+             return response.data.message
+         }).then((data)=>{ stringWord =JSON.stringify(data)
+    })
+
+
+
+
+
+    console.log("nooooo bro")
+
+}
+
+
+/**
+ * login variable
+ */
 const login = (
     <div >
         <Card style={{ width: '18rem' }}>
@@ -30,7 +72,7 @@ const login = (
                 <Card.Title>Login </Card.Title>
 
                 <div className = 'form-div'>
-                    <form onSubmit={onSubmit}>
+                    <form onSubmit={receiveFromDatabase}>
                         <input type = 'text'
                                placeholder='username'
                                //onChange={this.changeFullName}
@@ -52,14 +94,18 @@ const login = (
                 <Card.Text>
                     If you don't have an account, please sign up.
                 </Card.Text>
-                <Button variant="outline-info">Sign Up</Button>{' '}
+                <Nav.Link href="/signup">
+                    <Button variant="outline-info">Sign Up</Button>{' '}
+                </Nav.Link>
             </Card.Body>
         </Card>
 
     </div>
 );
 
-
+/**
+ * welcome message variable
+ */
 const welcome = (
     <div >
         <Card style={{ width: '18rem' }}>
@@ -77,6 +123,11 @@ const welcome = (
     </div>
 );
 
+/**
+ * Gets the Login component; returns a different login
+ * component whether you are logged in or not.
+ * @returns a way to login if not logged in; returns a welcome message otherwise
+ */
 function Login() {
     let isLoggedIn = localStorage.getItem("loggedIn")
     if (isLoggedIn !== "true") {
@@ -86,5 +137,5 @@ function Login() {
     }
 }
 
-export default Login;
+export {Login, logOut};
 

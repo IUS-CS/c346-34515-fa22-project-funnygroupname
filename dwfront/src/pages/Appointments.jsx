@@ -2,8 +2,19 @@ import React, {Component} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from 'axios'
 import AppointmentsComponent from "../assets/AppointmentsComponent";
+import '../assets/style.css'
 
+
+/**
+ * Class for the sake of getting and sending appointments to the backend database
+ */
 class Appointments extends Component{
+
+    /**
+     * Constructs the appointment component to initialize empty variables
+     * @constructor
+     * @param props react component props object
+     */
     constructor(props){
         super(props)
         this.state = {
@@ -22,33 +33,61 @@ class Appointments extends Component{
     }
 
 
+    /**
+     * Changes the full name variable
+     * @param event event occurring in program
+     */
     changeFullName(event){
         this.setState({
             fullName:event.target.value
         })
     }
+
+    /**
+     * Changes the email variable
+     * @param event event occurring in program
+     */
     changeEmail(event){
         this.setState({
             email:event.target.value
         })
     }
+
+    /**
+     * Changes the operation variable
+     * @param event event occurring in program
+     */
     changeOperation(event){
         this.setState({
             operation:event.target.value
         })
     }
+
+    /**
+     * Changes the cost variable
+     * @param event event occurring in program
+     */
     changeCost(event){
         this.setState({
             cost:event.target.value
         })
     }
+
+    /**
+     * Changes the date variable
+     * @param event event occurring in program
+     */
     changeDate(event){
         this.setState({
             date:event.target.value
         })
     }
 
-
+    /**
+     * Upon the submit button being pressed, this function executes
+     * Sends request (appointment) to the database via axios
+     * @param event event occurring in program
+     */
     onSubmit(event){
         event.preventDefault()
 
@@ -72,12 +111,18 @@ class Appointments extends Component{
         })
     }
 
+    /**
+     * Renders appointment request page
+     */
     render() {
         return (
             <div>
-                <AppointmentsComponent>
+                <div className="spacer03"/>
+                <div className = "center">
+                    <AppointmentsComponent/>
+                </div>
 
-                </AppointmentsComponent>
+                <div className="spacer03"/>
                 <div className='container'>
                     <h1>Dental Service</h1>
                     <h3>Request an appointment: </h3>

@@ -1,4 +1,8 @@
 const mongoose = require("mongoose")
+
+/**
+ * Sets up mongoose schema for payments made
+ */
 const PaymentsTemplate = new mongoose.Schema({
     payerName: {
         type:String,

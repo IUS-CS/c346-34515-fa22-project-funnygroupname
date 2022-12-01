@@ -10,13 +10,18 @@ import Appointments from "../pages/Appointments";
 import ContactUs from "../pages/ContactUs";
 import About from "../pages/About"
 import SignIn from "../pages/SignIn";
-import EmployeeSchedule from "../pages/EmployeeSchedule";
+import Schedule from "../pages/Schedule";
 import Customers from "../pages/Customers";
 import Account from "../pages/Account";
+import SignUp from "../pages/SignUp";
 import RequestAppointment from "../pages/RequestAppointment";
 import DatabaseTest from "../pages/DatabaseTest"
 import LocVars from "./LocalVariables"
 
+
+/**
+ * landing page variable
+ */
 const land = (
     <div className='LandingPage'>
         <NavigationBar/>
@@ -26,16 +31,23 @@ const land = (
             <Route path="/contactus" element={<ContactUs/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/login" element={<SignIn/>}/>
-            <Route path="/employeeschedule" element={<EmployeeSchedule/>}/>
+            <Route path="/schedule" element={<Schedule/>}/>
             <Route path="/customers" element={<Customers/>}/>
             <Route path="/reqapp" element={<RequestAppointment/>}/>
             <Route path="/test" element={<DatabaseTest/>}/>
             <Route path="/account" element={<Account/>}/>
+            <Route path="/signup" element={<SignUp/>}/>
             <></>
         </Routes>
     </div>
 );
 
+/**
+ * Gets the Landing page of our website and runs the setUpLocalVariable method
+ * This ensures that no matter which page is called, the local variables
+ * are set up
+ * @returns react component for the landing page
+ */
 function LandingPage() {
     LocVars.setUpLocalVariables()
     return land

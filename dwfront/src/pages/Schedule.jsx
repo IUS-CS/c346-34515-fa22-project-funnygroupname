@@ -1,11 +1,13 @@
 import React from "react";
 import '../assets/style.css'
 
-
+/**
+ * React component for the schedule page
+ */
 const element = (
     <div>
         <h1>
-            Employee Schedule
+            Schedule
         </h1>
         <h2>
             View list of employees work schedule:
@@ -25,8 +27,12 @@ const element = (
     </div>
 );
 
-function About() {
+/**
+ * Gets the Schedule page
+ * @returns react component for Schedule page
+ */
+function Schedule() {
     return element
 }
 
-export default About;
+export default Schedule;

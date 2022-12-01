@@ -3,6 +3,10 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css'
 //import 'bootstrap/dist/css'
+
+/**
+ * element for appointments component
+ */
 const element = (
     <div >
         <Card style={{ width: '18rem' }}>
@@ -18,6 +22,10 @@ const element = (
     </div>
 );
 
+/**
+ * Gets the component for appointments
+ * @returns react component of appointments
+ */
 function Appointments() {
     return element
 }

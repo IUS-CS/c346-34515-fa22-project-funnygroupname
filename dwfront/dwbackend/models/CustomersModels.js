@@ -1,4 +1,8 @@
 const mongoose = require("mongoose")
+
+/**
+ * Sets up mongoose schema for customers
+ */
 const CustomersTemplate = new mongoose.Schema({
     CustomerFullName: {
         type:String,

@@ -1,4 +1,8 @@
 const mongoose = require("mongoose")
+
+/**
+ * Sets up mongoose schema for time worked (when clocked in and when clocked out)
+ */
 const timeWorkedByEmployeeTemplate = new mongoose.Schema({
     fullName: {
         type:String,

@@ -2,7 +2,9 @@ import React from "react";
 import '../assets/style.css'
 import {Link} from "react-router-dom";
 
-
+/**
+ * React component for Home page
+ */
 const element = (
     <div>
         <h1>You're home</h1>
@@ -24,6 +26,10 @@ const element = (
     </div>
 );
 
+/**
+ * Gets the Home page
+ * @returns react component for Home page
+ */
 function Home() {
     return element
 }

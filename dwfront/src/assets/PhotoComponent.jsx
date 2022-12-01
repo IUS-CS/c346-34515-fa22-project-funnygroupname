@@ -2,7 +2,10 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css'
-//import 'bootstrap/dist/css'
+
+/**
+ * photo element variable
+ */
 const element = (
     <div >
 
@@ -21,6 +24,10 @@ const element = (
     </div>
 );
 
+/**
+ * Gets a photo element
+ * @returns react component of a photo
+ */
 function Photos() {
     return element
 }

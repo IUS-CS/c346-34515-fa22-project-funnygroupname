@@ -5,11 +5,15 @@ import { BrowserRouter } from 'react-router-dom';
 import LandingPage from "./assets/LandingPage";
 
 /**
- Renders react pages;
+ * Creation of our root object
  */
 const container = document.getElementById('root');
 const root = createRoot(container);
 
+
+/**
+ * Renders react pages
+ */
 root.render(
     <BrowserRouter>
         <LandingPage />

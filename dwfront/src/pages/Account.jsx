@@ -1,14 +1,11 @@
 import React from "react";
 import '../assets/style.css'
 import Button from 'react-bootstrap/Button';
-import LoginComponent from "../assets/LoginComponent";
+import {Login, logOut} from "../assets/LoginComponent";
 
-function logOut() {
-    localStorage.setItem("username","nil")
-    localStorage.setItem("loggedIn","false")
-    localStorage.setItem("privilege","nil")
-}
-
+/**
+ * React component for About page
+ */
 const element = (
     <div>
         <h1>Account information</h1>
@@ -34,10 +31,14 @@ const element = (
     </div>
 );
 
+/**
+ * Gets the Account page if they are logged in; requests they log in otherwise
+ * @returns react component for Account page
+ */
 function Account() {
     let isLoggedIn = localStorage.getItem("loggedIn")
     if (isLoggedIn !== "true") {
-        return (<LoginComponent/>)
+        return (<Login/>)
     } else {
         return element
     }

@@ -7,6 +7,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+/**
+ * Creates a different navigation link depending on if the user is logged in or not
+ * @returns react component of either a Login link or Account link
+ */
 function loginResult() {
     let isLoggedIn = localStorage.getItem("loggedIn")
     if (isLoggedIn !== "true") {
@@ -18,7 +22,9 @@ function loginResult() {
 
 
 
-
+/**
+ * navigation bar variable
+ */
 const bar = (
     <div>
     <Navbar collapseOnSelect expand="lg" bg="Info" variant="Info">
@@ -34,8 +40,8 @@ const bar = (
                     <NavDropdown title="Others" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="/about">About</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="/test">
-                            TESTING
+                        <NavDropdown.Item href="/schedule">
+                            Schedule
                         </NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
@@ -49,6 +55,10 @@ const bar = (
     </div>
 );
 
+/**
+ * Gets the Navigation Bar
+ * @returns react component of Navigation bar
+ */
 function NavigationBar() {
     return bar
 }

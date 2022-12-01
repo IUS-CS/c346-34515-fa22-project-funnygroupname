@@ -39,6 +39,7 @@ npm test
 * Node.js
 * MongoDB
 * npm
+* jsdoc
 * npm libraries (frontend)
     * yarn
     * bootstrap
