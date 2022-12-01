@@ -77,6 +77,12 @@
     height: 10px
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
 
 .pageLine {
     height: 2px;

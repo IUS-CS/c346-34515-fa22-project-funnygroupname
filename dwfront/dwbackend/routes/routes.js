@@ -83,5 +83,13 @@ router.get("/", (req, res) =>
         .send({ message: "Hello from the server !"})
 );
 
+/**
+ * Sets up route for receiving user info
+ */
+router.get("/users", (req, res) =>
+    res.status(200)
+        .send({ message: "Hello from the server !"})
+);
+
 
 module.exports = router

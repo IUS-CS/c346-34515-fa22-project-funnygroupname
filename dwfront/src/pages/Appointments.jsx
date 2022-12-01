@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from 'axios'
 import AppointmentsComponent from "../assets/AppointmentsComponent";
+import '../assets/style.css'
 
 
 /**
@@ -116,9 +117,12 @@ class Appointments extends Component{
     render() {
         return (
             <div>
-                <AppointmentsComponent>
+                <div className="spacer03"/>
+                <div className = "center">
+                    <AppointmentsComponent/>
+                </div>
 
-                </AppointmentsComponent>
+                <div className="spacer03"/>
                 <div className='container'>
                     <h1>Dental Service</h1>
                     <h3>Request an appointment: </h3>

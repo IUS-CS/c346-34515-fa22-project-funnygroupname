@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from "axios";
+import Nav from 'react-bootstrap/Nav';
 
 
 
@@ -21,13 +22,12 @@ function logOut() {
  */
 let usernameTemp = "";
 let passwordTemp = "";
+let stringWord = "";
 
 /**
  * Logs a user into their account given their account username and password
  */
 function onSubmit(){
-
-
     const requ = {
         username:"user",
         password:"2124",
@@ -38,6 +38,27 @@ function onSubmit(){
 
     usernameTemp = ""
     passwordTemp = ""
+}
+
+function receiveFromDatabase(){
+
+    console.log("HEY DUDE")
+
+
+    axios
+        .get("http://localhost:4000/app/users")
+        .then(function (response) {
+            console.log(response.data.message)
+             return response.data.message
+         }).then((data)=>{ stringWord =JSON.stringify(data)
+    })
+
+
+
+
+
+    console.log("nooooo bro")
+
 }
 
 
@@ -51,7 +72,7 @@ const login = (
                 <Card.Title>Login </Card.Title>
 
                 <div className = 'form-div'>
-                    <form onSubmit={onSubmit}>
+                    <form onSubmit={receiveFromDatabase}>
                         <input type = 'text'
                                placeholder='username'
                                //onChange={this.changeFullName}
@@ -73,7 +94,9 @@ const login = (
                 <Card.Text>
                     If you don't have an account, please sign up.
                 </Card.Text>
-                <Button variant="outline-info">Sign Up</Button>{' '}
+                <Nav.Link href="/signup">
+                    <Button variant="outline-info">Sign Up</Button>{' '}
+                </Nav.Link>
             </Card.Body>
         </Card>
 

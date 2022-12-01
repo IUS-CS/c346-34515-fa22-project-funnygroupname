@@ -13,6 +13,7 @@ import SignIn from "../pages/SignIn";
 import Schedule from "../pages/Schedule";
 import Customers from "../pages/Customers";
 import Account from "../pages/Account";
+import SignUp from "../pages/SignUp";
 import RequestAppointment from "../pages/RequestAppointment";
 import DatabaseTest from "../pages/DatabaseTest"
 import LocVars from "./LocalVariables"
@@ -35,6 +36,7 @@ const land = (
             <Route path="/reqapp" element={<RequestAppointment/>}/>
             <Route path="/test" element={<DatabaseTest/>}/>
             <Route path="/account" element={<Account/>}/>
+            <Route path="/signup" element={<SignUp/>}/>
             <></>
         </Routes>
     </div>
