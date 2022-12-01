@@ -1,5 +1,8 @@
 const mongoose = require("mongoose")
 
+/**
+ * Sets up mongoose schema for appointments
+ */
 const appointmentTemplate = new mongoose.Schema({
     fullName: {
         type:String,

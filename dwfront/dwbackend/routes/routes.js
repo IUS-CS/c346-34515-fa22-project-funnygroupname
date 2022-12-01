@@ -4,6 +4,9 @@ const appointmentTemplateCopy  = require('../models/appointmentModels')
 const usersTemplateCopy  = require('../models/signInModel')
 const testTemplateCopy = require("../models/testModel")
 
+/**
+ * Sets up route for sending in appointments
+ */
 router.post('/appointments',(request, response) =>{
     const appointmentRequest  = new  appointmentTemplateCopy({
         fullName:request.body.fullName,
@@ -21,7 +24,9 @@ router.post('/appointments',(request, response) =>{
         })
 })
 
-
+/**
+ * Sets up route for sending in user account details
+ */
 router.post('/users',(request, response) =>{
     const userRequest  = new  usersTemplateCopy({
         username:request.body.username,
@@ -40,6 +45,9 @@ router.post('/users',(request, response) =>{
         })
 })
 
+/**
+ * Sets up route for sending in data for test
+ */
 router.post('/test',(request, response) =>{
     const testRequest  = new  testTemplateCopy({
         name:request.body.name,
@@ -54,6 +62,9 @@ router.post('/test',(request, response) =>{
         })
 })
 
+/**
+ * Sets up route for fetching data
+ */
 router.route("/fetch").get(function(req, res){
     kennel.find({}, function(err, result)  {
         if (err) {
@@ -64,6 +75,9 @@ router.route("/fetch").get(function(req, res){
     });
 });
 
+/**
+ * Sets up route for getting a simple response from the server
+ */
 router.get("/", (req, res) =>
     res.status(200)
         .send({ message: "Hello from the server !"})

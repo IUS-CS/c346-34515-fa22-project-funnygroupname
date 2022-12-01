@@ -1,4 +1,8 @@
 const mongoose = require("mongoose")
+
+/**
+ * Sets up mongoose schema for services offered by the dentistry
+ */
 const serviceTemplate = new mongoose.Schema({
     serviceType: {
         type:String,

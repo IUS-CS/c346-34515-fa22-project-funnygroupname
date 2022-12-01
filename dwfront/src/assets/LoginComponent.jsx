@@ -4,10 +4,27 @@ import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from "axios";
 
+
+
+/**
+ * Function to set local variables to the state of being logged out
+ */
+function logOut() {
+    localStorage.setItem("username","nil")
+    localStorage.setItem("loggedIn","false")
+    localStorage.setItem("privilege","nil")
+}
+
+
+/**
+ * Temporary variables for logging in
+ */
 let usernameTemp = "";
 let passwordTemp = "";
 
-
+/**
+ * Logs a user into their account given their account username and password
+ */
 function onSubmit(){
 
 
@@ -23,6 +40,10 @@ function onSubmit(){
     passwordTemp = ""
 }
 
+
+/**
+ * login variable
+ */
 const login = (
     <div >
         <Card style={{ width: '18rem' }}>
@@ -59,7 +80,9 @@ const login = (
     </div>
 );
 
-
+/**
+ * welcome message variable
+ */
 const welcome = (
     <div >
         <Card style={{ width: '18rem' }}>
@@ -77,6 +100,11 @@ const welcome = (
     </div>
 );
 
+/**
+ * Gets the Login component; returns a different login
+ * component whether you are logged in or not.
+ * @returns a way to login if not logged in; returns a welcome message otherwise
+ */
 function Login() {
     let isLoggedIn = localStorage.getItem("loggedIn")
     if (isLoggedIn !== "true") {
@@ -86,5 +114,5 @@ function Login() {
     }
 }
 
-export default Login;
+export {Login, logOut};
 

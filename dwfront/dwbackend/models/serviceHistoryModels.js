@@ -1,4 +1,8 @@
 const mongoose = require("mongoose")
+
+/**
+ * Sets up mongoose schema for services performed for given patient(s)
+ */
 const serviceHistoryTemplate = new mongoose.Schema({
     totalNumbersOfCustomersServedSinceDayOne: {
         type:String,

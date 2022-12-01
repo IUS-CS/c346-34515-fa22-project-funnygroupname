@@ -1,7 +1,9 @@
 import React from "react";
 import '../assets/style.css'
 
-
+/**
+ * React component for About page
+ */
 const element = (
     <div>
         <h1>YOUR DENTIST NAME</h1>
@@ -19,6 +21,11 @@ const element = (
     </div>
 );
 
+
+/**
+ * Gets the About page
+ * @returns react component for about page
+ */
 function About() {
     return element
 }

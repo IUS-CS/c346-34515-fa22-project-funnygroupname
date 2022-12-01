@@ -1,4 +1,8 @@
 const mongoose = require("mongoose")
+
+/**
+ * Sets up mongoose schema for distributing payroll
+ */
 const employeePayrollTemplate = new mongoose.Schema({
     fullName: {
         type:String,
@@ -8,26 +12,14 @@ const employeePayrollTemplate = new mongoose.Schema({
         type:String,
         required:true
     },
-    clockInTime:{
-        type:String,
-        required:true
-    },
-
-    clockOutTime:{
-        type:String,
-        required:true
-
-    },
     idNumber:{
         type:String,
         required:true
 
     },
-
     numberOfHoursWorkedPerDay:{
         type:String,
         required:true
-
     },
     speciality: {
         type: String,

@@ -1,5 +1,8 @@
 import React from "react";
 
+/**
+ * React component for Customers page
+ */
 const element = (
     <div>
         <p className='default'>
@@ -21,6 +24,10 @@ const element = (
     </div>
 );
 
+/**
+ * Gets the Customers page
+ * @returns react component for Customers page
+ */
 function Customers() {
     return element
 }

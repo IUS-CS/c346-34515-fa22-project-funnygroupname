@@ -1,5 +1,8 @@
 const mongoose = require("mongoose")
 
+/**
+ * Sets up mongoose schema for users signing in
+ */
 const usersTemplate = new mongoose.Schema({
     username: {
         type:String,

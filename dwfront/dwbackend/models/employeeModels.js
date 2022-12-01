@@ -1,4 +1,8 @@
 const mongoose = require("mongoose")
+
+/**
+ * Sets up mongoose schema for employees
+ */
 const employeeTemplate = new mongoose.Schema({
     fullName: {
         type:String,

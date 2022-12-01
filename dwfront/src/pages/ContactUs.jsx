@@ -1,5 +1,8 @@
 import React from "react";
 
+/**
+ * React component for contact us page
+ */
 const element = (
     <div>
         <h1 className='default'>
@@ -36,6 +39,10 @@ const element = (
     </div>
 );
 
+/**
+ * Gets the Contact Us page
+ * @returns react component for contacts page
+ */
 function ContactUs() {
     return element
 }
