@@ -1,7 +1,7 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import 'bootstrap/dist/css/bootstrap.min.css'
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from "axios";
 import Nav from 'react-bootstrap/Nav';
 
@@ -14,6 +14,8 @@ function logOut() {
     localStorage.setItem("username","nil")
     localStorage.setItem("loggedIn","false")
     localStorage.setItem("privilege","nil")
+    localStorage.setItem("firstname","nil")
+    localStorage.setItem("lastname","nil")
 }
 
 
@@ -49,9 +51,10 @@ function receiveFromDatabase(){
         .get("http://localhost:4000/app/users")
         .then(function (response) {
             console.log(response.data.message)
-             return response.data.message
-         }).then((data)=>{ stringWord =JSON.stringify(data)
-    })
+            return response.data.message
+        }).then((data)=>{
+        stringWord = JSON.stringify(data);
+    });
 
 
 
